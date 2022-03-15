@@ -27,7 +27,7 @@ const CartScreen = () => {
     
 
 axios.post('http://localhost:5000/api/add',cartItems[i])
-      alert("Cart confirmed!")
+      alert("Cart confirmed")
     }
 
    
