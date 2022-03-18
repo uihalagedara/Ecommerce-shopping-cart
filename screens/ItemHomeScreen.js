@@ -1,14 +1,11 @@
 import './ItemHomeScreen.css';
 import {useEffect} from 'react';
 import {useSelector,useDispatch} from 'react-redux';
-//import React, { Component } from 'react';
 import axios from 'axios';
-//import filterData from 'react'
-//import handleSearchArea from 'react'
 import Item from "../components/modules/CustomerPageModules/Stock/Item";
 
-//actions
-import {getItems as listItems} from '../redux/actions/itemActions'; //using as litItems it wont clash with the const getItems in the useSelector
+
+import {getItems as listItems} from '../redux/actions/itemActions';
 
 
 const ItemHomeScreen = () => {
@@ -46,7 +43,7 @@ const ItemHomeScreen = () => {
 </h1>
             <br/>
             &nbsp;&nbsp;
-            <button className="btn btn-outline-secondary"><i className="fas fa-shopping-cart"><a href="/cart" style={{textDecoration:'none',color:'black',fontWeight:'bolder',borderRadius:'8px'}}>
+            <button className="btn btn-secondary"><i className="fas fa-shopping-cart"><a href="/cart" style={{textDecoration:'none',color:'black',fontWeight:'bolder',borderRadius:'8px'}}>
                 <span>
                 Cart<span className="cartLogo__badge">0</span></span></a></i></button>
         <br/><br/>
