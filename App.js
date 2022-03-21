@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 //import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 import ItemHomeScreen from './screens/ItemHomeScreen';
-import ItemScreens from './screens/ItemScreen';
+import ItemScreen from './screens/ItemScreen';
 
 //component
 import Navbar  from './components/Navbar';
@@ -24,7 +24,7 @@ function App() {
           <Route exact path="/product/:id" component={ProductScreen}/>*/}
           <Route exact path="/cart" component={CartScreen}/>
           <Route exact path="/item" component={ItemHomeScreen}>
-          <Route exact path="/item/:id" component={ItemScreens}>
+          <Route exact path="/item/:id" component={ItemScreen}>
             </Route>
             </Route>
         </Switch>
